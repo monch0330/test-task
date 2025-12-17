@@ -1,0 +1,44 @@
+.upload {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding:10px;
+  background-color: var(--white);
+  border: 2px solid var(--blue);
+  border-radius: 3px;
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  font-family: Lato, sans-serif;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-600);
+  cursor: pointer;
+
+  &__input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    fill: currentColor;
+  }
+
+  &__label {
+    width: max-content;
+    background: rgba(var(--white-rgb), 0.85);
+    border: 1px solid rgba(var(--white-rgb), 0.7);
+    border-radius: 4px;
+    font-family: Lato, sans-serif;
+    font-size: var(--fs-14);
+    font-weight: var(--fw-400);
+    line-height: 1.4;
+    color: var(--dark-gray);
+  }
+}

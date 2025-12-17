@@ -1,0 +1,53 @@
+.footer {
+  background-color: var(--dark-slate-blue);
+
+  &__inner {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px 16px;
+    margin: auto;
+  }
+
+  &__label {
+    font-family: Lato, sans-serif;
+    font-size: var(--fs-13);
+    font-weight: var(--fw-400);
+    line-height: 100%;
+    color: var(--neutral-gray);
+  }
+  
+  &__separator{
+    display: none;
+    color: var(--neutral-gray);
+    @include min-width($breakpoint){
+      display: block;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    fill: var(--blue-rgb);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @include min-width($breakpoint) {
+    &__inner {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0;
+      padding: 30px 20px;
+    }
+  }
+}

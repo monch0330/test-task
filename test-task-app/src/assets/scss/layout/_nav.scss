@@ -1,0 +1,124 @@
+.nav {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  pointer-events: none;
+  z-index: 12;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: var(--overlay-dark);
+    padding: 80px 32px 32px;
+    width: min(320px, 80vw);
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.35);
+    pointer-events: auto;
+    z-index: 12;
+  }
+
+  &__link {
+    font-family: Lato, sans-serif;
+    font-size: var(--fs-13);
+    font-weight: var(--fw-600);
+    line-height: 100%;
+    color: var(--active-page, var(--white));
+    text-transform: uppercase;
+  }
+
+  &__item {
+    &--active {
+      --active-page: var(--blue);
+    }
+  }
+
+  &__close {
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-end;
+
+    &-button {
+      position: absolute;
+      top: 30px;
+      right: 32px;
+      display: flex;
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: 1px solid rgba(var(--white-rgb), 0.2);
+      border-radius: 8px;
+      padding: 0;
+    }
+
+    &-line {
+      position: absolute;
+      width: 22px;
+      height: 2px;
+      background-color: var(--white);
+      border-radius: 2px;
+    }
+
+    &-i {
+      width: 70%;
+      height: 70%;
+      fill: var(--white);
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(var(--overlay-dark-rgb), 0.8);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    z-index: 11;
+    display: block;
+  }
+
+  &--open {
+    pointer-events: auto;
+
+    .nav__list {
+      transform: translateX(0);
+    }
+
+    .nav__overlay {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  @include min-width($breakpoint) {
+    position: static;
+    inset: auto;
+    display: block;
+    pointer-events: auto;
+    z-index: auto;
+
+    &__overlay {
+      display: none;
+    }
+
+    &__list {
+      flex-direction: row;
+      gap: 60px;
+      background: transparent;
+      padding: 0;
+      width: auto;
+      height: auto;
+      transform: none;
+      box-shadow: none;
+    }
+
+    &__close {
+      display: none;
+    }
+  }
+}

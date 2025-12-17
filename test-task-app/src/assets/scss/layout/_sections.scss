@@ -1,0 +1,255 @@
+.lorem {
+  width: 100%;
+  height: 100%;
+  background-image:url('../../resources/images/section-background-1.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__inner {
+    max-width: 1200px;
+    margin: auto;
+    padding-block: 130px 50px;
+    padding-inline: 16px;
+  }
+
+  &__item {
+    max-width: 640px;
+  }
+
+  &__title {
+    margin-block-end: 40px;
+    font-family: Lato, sans-serif;
+    font-size: var(--fs-28);
+    font-weight: var(--fw-700);
+    line-height: 100%;
+    color: var(--black);
+    text-align: left;
+    text-transform: uppercase;
+
+    &--accent {
+      color: var(--blue);
+    }
+  }
+
+
+  &__subtitle {
+    margin-block-end: 16px;
+    font-family: LatoBold, sans-serif;
+    font-size: var(--fs-18);
+    font-weight: var(--fw-700);
+    line-height: var(--lh-20);
+    color: var(--black);
+  }
+
+  &__list {
+    &-item {
+      font-family: Lato, sans-serif;
+      font-size: var(--fs-16);
+      font-weight: var(--fw-400);
+      line-height: var(--lh-20);
+
+      &::before {
+        content: '- ';
+        color: var(--black);
+      }
+
+      &:not(:last-child) {
+        margin-block-end: 5px;
+      }
+
+    }
+  }
+
+  &__content {
+    margin-block-end: 56px;
+  }
+
+  @include min-width($sm-breakpoint) {
+    &__title {
+      font-size: var(--fs-32);
+    }
+  }
+  @include min-width($breakpoint) {
+    &__inner {
+      padding-block: 150px;
+      padding-inline: 20px;
+    }
+
+    &__item {
+      max-width: 810px;
+    }
+
+    &__title {
+      margin-block-end: 80px;
+      font-size: var(--fs-48);
+    }
+
+    &__subtitle {
+      margin-block-end: 10px;
+      font-size: var(--fs-20);
+      line-height: var(--lh-24);
+    }
+
+    &__list {
+      &-item {
+        font-size: var(--fs-20);
+        line-height: var(--lh-24);
+      }
+    }
+
+    &__content {
+      margin-block-end: 80px;
+    }
+  }
+}
+
+
+.order {
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-dark);
+  background-image: url('../../resources/images/section-background-2.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__inner {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding-block: 50px;
+    padding-inline: 16px;
+  }
+
+  &__title {
+    font-family: Lato, sans-serif;
+    font-size: var(--fs-28);
+    font-weight: var(--fw-800);
+    line-height: 100%;
+    margin-block-end: 20px;
+    color: var(--white);
+    text-transform: uppercase;
+
+    &--accent {
+      color: var(--blue);
+    }
+  }
+
+  &__subtitle {
+    margin-block-end: 30px;
+    font-family: Lato, sans-serif;
+    font-size: var(--fs-16);
+    font-weight: var(--fw-400);
+    line-height: 100%;
+    color: var(--light-gray);
+  }
+
+  &__scheme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include min-width($breakpoint) {
+    &__inner {
+      padding-block: 100px;
+      padding-inline: 20px;
+    }
+
+    &__title {
+      font-size: var(--fs-36);
+      margin-block-end: 30px;
+    }
+
+    &__subtitle {
+      margin-block-end: 50px;
+      font-size: var(--fs-18);
+    }
+
+  }
+
+  &__form {
+    width: 100%;
+    display: grid;
+    gap: 24px;
+  }
+
+  &__form-row {
+
+    &--range {
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &--actions {
+      width: 100%;
+      margin: 0 auto;
+      @include min-width($breakpoint) {
+        max-width: 370px;
+      }
+    }
+  }
+
+  &__range-track {
+    position: relative;
+  }
+
+  &__range {
+    width: 100%;
+    height: 6px;
+    background-color: rgba(var(--white-rgb), 0.7);
+    border: 1px solid var(--white);
+    border-radius: 3px;
+    accent-color: var(--blue);
+
+    &-label {
+      font-family: Lato, sans-serif;
+      font-size: var(--fs-12);
+      font-weight: var(--fw-400);
+      line-height: 100%;
+      color: var(--white);
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+
+  @include min-width($sm-breakpoint) {
+    &__range-label {
+      font-size: var(--fs-18);
+    }
+  }
+
+  @include min-width($breakpoint) {
+    &__form {
+      gap: 28px;
+    }
+
+    &__form-row {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+
+      &--range {
+        grid-template-columns: 1fr auto;
+        gap: 16px;
+      }
+
+      &--actions {
+        grid-template-columns: auto 200px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+    }
+
+  }
+}

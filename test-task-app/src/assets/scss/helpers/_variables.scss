@@ -1,0 +1,81 @@
+:root {
+  //rgb base colors
+  --white-rgb: 255, 255, 255;
+  --black-rgb: 0, 0, 0;
+  --overlay-dark-rgb: 16, 16, 29;
+  --blue-rgb: 62, 156, 220;
+  --light-blue-rgb: 67, 171, 240;
+  --dark-blue-rgb: 40, 102, 144;
+  --gray-rgb: 111, 109, 123;
+  --light-gray-rgb: 187, 187, 187;
+  --dark-gray-rgb: 42, 43, 48;
+  --dark-slate-blue-rgb:61, 64, 80;
+  --dark-navy-gray-rgb:39, 39, 51;
+  --neutral-gray-rgb:195, 195, 195;
+
+  //solid colors
+  --white: rgb(var(--white-rgb));
+  --black: rgb(var(--black-rgb));
+  --blue: rgb(var(--blue-rgb));
+  --dark-blue: rgb(var(--dark-blue-rgb));
+  --gray: rgb(var(--gray-rgb));
+  --light-gray: rgb(var(--light-gray-rgb));
+  --dark-gray: rgb(var(--dark-gray-rgb));
+  --light-blue: rgb(var(--light-blue-rgb));
+  --overlay-dark: rgba(var(--overlay-dark-rgb), 0.9);
+  --dark-slate-blue:rgb(var(--dark-slate-blue-rgb));
+  --dark-navy-gray:rgb(var(--dark-navy-gray-rgb));
+  --neutral-gray:rgb(var(--neutral-gray-rgb));
+
+  //button colors
+  --primary-button-bg: var(--blue);
+  --secondary-button-bg: var(--white);
+
+  //dropdown colors
+  --primary-dropdown-bg: rgba(var(--white-rgb), 0.85);
+
+  //input colors
+  --primary-input-bg: rgba(var(--white-rgb), 0.85);
+
+  //  border colors
+  --border-primary: var(--blue);
+  --border-secondary: var(--white);
+  --border-tertiary: var(--gray);
+
+  //font Size
+  --fs-12: 12px;
+  --fs-13: 13px;
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-18: 18px;
+  --fs-20: 20px;
+  --fs-22: 22px;
+  --fs-24: 24px;
+  --fs-28: 28px;
+  --fs-32: 32px;
+  --fs-36: 36px;
+  --fs-48: 48px;
+
+  //font Weight
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  --fw-900: 900;
+
+
+  //Line Height
+  --lh-12: 12px;
+  --lh-14: 14px;
+  --lh-16: 16px;
+  --lh-18: 18px;
+  --lh-20: 20px;
+  --lh-22: 22px;
+  --lh-24: 24px;
+}
+
+$sm-breakpoint: 550px;
+$breakpoint: 782px;
+$lg-breakpoint: 1100px;
+$xl-breakpoint: 1200px;

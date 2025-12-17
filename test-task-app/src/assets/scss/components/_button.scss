@@ -1,0 +1,54 @@
+.button {
+  width: 100%;
+  padding-block-start: var(--buttun-pb-start);
+  padding-block-end: var(--buttun-pb-end);
+  padding-inline-start: var(--buttun-pi-start);
+  padding-inline-end: var(--buttun-pi-end);
+  background-color: var(--button-bg);
+  border: var(--button-border, none);
+  border-radius: var(--button-border-radius, 4px);
+
+  &__label {
+    padding-inline-start:var(--button-label-pi-start);
+    padding-inline-end:var(--button-label-pi-end);
+    font-family: var(--button-ff, sans-serif);
+    font-size: var(--button-fs);
+    font-weight: var(--button-fw);
+    line-height: var(--button-lh);
+    color: var(--button-color);
+    text-transform: var(--button-text-transform);
+  }
+
+  &--primary {
+    --button-ff: Lato, sans-serif;
+    --button-bg: var(--blue);
+    --button-color: var(--white);
+    --button-fs: var(--fs-13);
+    --button-fw: var(--fw400);
+    --button-lh: 100%;
+    --button-text-transform: uppercase;
+    --buttun-pb-start:9px;
+    --buttun-pb-end:9px;
+    --buttun-pi-start:28px;
+    --buttun-pi-end:28px;
+    --button-label-pi-start:28px;
+    --button-label-pi-end:28px;
+    --button-border:1px solid var(--white)
+  }
+  &--secondary {
+    --button-ff: Lato, sans-serif;
+    --button-bg: var(--white);
+    --button-color: var(--dark-gray);
+    --button-fs: var(--fs-13);
+    --button-fw: var(--fw400);
+    --button-lh: 100%;
+    --button-text-transform: uppercase;
+    --buttun-pb-start:9px;
+    --buttun-pb-end:9px;
+    --buttun-pi-start:24px;
+    --buttun-pi-end:24px;
+    --button-label-pi-start:24px;
+    --button-label-pi-end:24px;
+    --button-border:1px solid var(--dark-gray)
+  }
+}

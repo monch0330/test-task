@@ -1,0 +1,18 @@
+.input {
+  display: block;
+  width: 100%;
+
+  &__inner {
+    width: 100%;
+    height: 100%;
+    background: rgba(var(--white-rgb), 0.85);
+    border: 1px solid rgba(var(--white-rgb), 0.7);
+    border-radius: 3px;
+    font-family: Lato, sans-serif;
+    font-size: var(--fs-14);
+    font-weight: var(--fw-400);
+    line-height: 1.4;
+    color: var(--dark-gray);
+    padding: 10px;
+  }
+}
