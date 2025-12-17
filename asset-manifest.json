@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/test-task/static/css/main.647625c5.css",
+    "main.js": "/test-task/static/js/main.e5d161aa.js",
+    "static/media/section-background-2.webp": "/test-task/static/media/section-background-2.39f1b891ad038afb4876.webp",
+    "static/media/section-background-1.webp": "/test-task/static/media/section-background-1.345f8661a9b81f184476.webp",
+    "static/media/Raleway-VariableFont_wght.woff2": "/test-task/static/media/Raleway-VariableFont_wght.7844baf3b3026b38f848.woff2",
+    "static/media/Lato-Regular.woff2": "/test-task/static/media/Lato-Regular.13eef1640d607df6bd46.woff2",
+    "static/media/Lato-Bold.woff2": "/test-task/static/media/Lato-Bold.bf197cc98095797c8a35.woff2",
+    "index.html": "/test-task/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.647625c5.css",
+    "static/js/main.e5d161aa.js"
+  ]
+}
