@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/test-task/static/css/main.ac525860.css",
+    "main.css": "/test-task/static/css/main.37bd9d51.css",
     "main.js": "/test-task/static/js/main.e5d161aa.js",
     "static/media/section-background-2.webp": "/test-task/static/media/section-background-2.39f1b891ad038afb4876.webp",
     "static/media/section-background-1.webp": "/test-task/static/media/section-background-1.345f8661a9b81f184476.webp",
@@ -10,7 +10,7 @@
     "index.html": "/test-task/index.html"
   },
   "entrypoints": [
-    "static/css/main.ac525860.css",
+    "static/css/main.37bd9d51.css",
     "static/js/main.e5d161aa.js"
   ]
 }
