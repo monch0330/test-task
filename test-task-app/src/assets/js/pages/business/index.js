@@ -46,8 +46,8 @@ const BusinessPage = () => {
                 </section>
                 <section className='order' id='order'>
                     <div className="order__inner">
-                        <h1 className='order__title'>Оформление <span className='order__title--accent'>заказа</span>
-                        </h1>
+                        <h2 className='order__title'>Оформление <span className='order__title--accent'>заказа</span>
+                        </h2>
                         <p className='order__subtitle'>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
                         <div className="order__scheme">
                             <div className="column">
