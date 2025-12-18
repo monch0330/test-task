@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test-task/static/css/main.e8f61516.css",
-    "main.js": "/test-task/static/js/main.e5d161aa.js",
+    "main.js": "/test-task/static/js/main.f497fc15.js",
     "static/media/section-background-2.webp": "/test-task/static/media/section-background-2.39f1b891ad038afb4876.webp",
     "static/media/section-background-1.webp": "/test-task/static/media/section-background-1.345f8661a9b81f184476.webp",
     "static/media/Raleway-VariableFont_wght.woff2": "/test-task/static/media/Raleway-VariableFont_wght.7844baf3b3026b38f848.woff2",
@@ -11,6 +11,6 @@
   },
   "entrypoints": [
     "static/css/main.e8f61516.css",
-    "static/js/main.e5d161aa.js"
+    "static/js/main.f497fc15.js"
   ]
 }
